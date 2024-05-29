@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,body{
+  background: #e0e5ec;
+  overflow: hidden;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  height: 500px;
+}
+.text{
+  color: #e0e5ec;
+  letter-spacing: 15px;
+  text-shadow: 7px 7px 20px rgba(0,0,0,0.2),
+  -7px -7px 20px rgba(241,241,241,1),
+  -4px -4px 5px  rgba(241,241,241,1),
+  0px 0px 20px rgba(241,241,241,1),
+  0px 0px 30px rgba(241,241,241,1),
+  4px 4px 5px rgba(0,0,0,0.3),
+  0px 0px 10px rgba(0,0,0,0.3);
+  font-size: 201px;
+}
+.page{
+  color: #e0e5ec;
+  font-size: 28px;
+  line-height: 3;
+  letter-spacing: 2px;
+  text-shadow: 1px 2px 4px rgba(0,0,0,0.3),
+  -7px -7px 20px rgba(241,241,241,1),
+  -4px -4px 5px  rgba(241,241,241,1),
+  0px 0px 20px rgba(241,241,241,1),
+  0px 0px 30px rgba(241,241,241,1),
+  4px 4px 5px rgba(0,0,0,0.2),
+  0px 0px 10px rgba(0,0,0,0.3);
+}
+.message{
+  text-shadow: 1px 2px 4px rgba(0,0,0,0.3),
+  -7px -7px 20px rgba(241,241,241,1),
+  -4px -4px 5px  rgba(241,241,241,1),
+  0px 0px 20px rgba(241,241,241,1),
+  0px 0px 30px rgba(241,241,241,1),
+  4px 4px 5px rgba(0,0,0,0.2),
+  0px 0px 10px rgba(0,0,0,0.3);
+  color: #e0e5ec;
+  letter-spacing: 1px;
+  font-size: 22px;
+}

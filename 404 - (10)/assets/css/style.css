@@ -1,0 +1,142 @@
+*{
+  padding:0px;
+  margin:0px;
+}
+
+#error-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 97vh;
+  flex-direction: column;
+}
+#error-section::before{
+  content:"";
+  background-image: url(../img/space.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:100vh;
+  position: absolute;
+  top: 0px;
+  right:0px;
+  z-index: -1;
+ width: 100%;
+}
+
+img.error{
+  height:200px;
+}
+
+img.moon{
+  height:111vh;
+  position:absolute;
+  top: -206px;
+  left: -230px;
+  filter: drop-shadow(0px 0 27px #c3c3c3e0);
+  /* animation: move-moon 20s linear alternate infinite; */
+
+}
+
+img.spacesuit{
+  height:222px;
+  position: absolute;
+  top: 0px;
+  right: 40px;
+  transform:rotate(46deg);
+  animation:move-suit 0.9s linear alternate infinite
+}
+
+img.earth{
+  height:102px;
+  position: absolute;
+  top: 406px;
+  right: 126px;
+  transform:rotate(46deg);
+  animation: move-earth 20s linear infinite
+}
+
+img.left-arrow{
+  height: 20px;
+  margin: 0px 12px;
+  animation: arrow-left 1s linear alternate infinite;
+}
+
+h2{
+  font-family: monospace;
+  color: #8b8b8b;
+  font-size: 5vh;
+  margin-bottom: 53px;
+}
+
+h3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a{
+  color:white;
+  font-family: monospace;
+  text-decoration:none;
+  font-size: 18px;
+}
+
+@keyframes move-suit {
+  from{
+      top:0px;
+  }
+  to{
+      top: 9px;
+      transform: rotate(50deg);
+  }
+}
+
+@keyframes move-earth {
+  from{
+      transform: rotate(0deg);
+  }
+  to{
+      transform: rotate(360deg);
+  }
+}
+
+@keyframes move-moon{
+  from{
+      height: 111vh;
+  }
+  to{
+      height: 119vh;
+  }
+}
+
+@keyframes arrow-left{
+  from{
+      transform: translateX(0px)
+  }
+  to{
+      transform: translateX(10px)
+  }
+}
+
+
+/* responsiveness */
+@media only screen and (max-width: 783px) {
+  img.moon{
+      display: none;
+  }
+
+
+  #error-section{
+      height:154vh;
+  }
+
+  #error-section::before{
+      height:154vh;
+  }
+
+  img.earth{
+      top: 533px;
+      left: 126px;
+  }
+}
